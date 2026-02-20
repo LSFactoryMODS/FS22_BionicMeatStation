@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="77">
+    <author>LSFactoryMODS</author>
+    <version>1.0.0.0</version>
+    
+<title>
+    <de>Bionischer Fleischverarbeiter</de>
+    <en>Bionic Meat Processor</en>
+</title> 
+    
+<description>
+<en><![CDATA[
+Discover the wonders of biotechnology with the Bionic Meat Processor.
+This mod includes a Bionic Meat Processor production.
+H-milk and stem cells are produced from milk. In the further process nutrient solution is needed (can be bought in the store),
+From stem cells and nutrient solution in special incubators then bionic meat is produced.
+
+UHT milk and bionic meat can be sold at different points of sale.
+Stem cells can only be processed.
+
+Placeable Shop Category: Production -> Factories
+Construction costs: $110,000
+Incoming goods: milk, nutrient solution, stem cells(own production line)
+Outgoing goods: UHT milk, bionic meat
+
+Functions:
+- Switchable light
+- Digital displays
+
+
+Production recipes
+
+Stem cells:
+100 l milk yields 20 l stem cells (48 cycles / month | 240 € / month).
+
+UHT milk:
+100 l milk Results in 95 l UHT milk (48 cycles / month | 240 € / month)
+
+Bionic meat:
+20 l stem cells + 20 l nutrient solution yield 100 l bionic meat (48 cycles / month | 240 € / month)
+]]></en>
+<de><![CDATA[
+Entdecken Sie die Wunder der Biotechnologie mit dem Bionischen Fleischverarbeiter.
+Diese Mod beinhaltet eine Bionische Fleischverarbeitungs Produktion.
+Aus Milch werden H-Milch und Stammzellen hergestellt. Im weiteren Verfahren wird Nährstofflösung Benötigt (Kann im Shop Gekauft werden),
+aus Stammzellen und Nährstofflösung wird in Speziellen Brutöfen dann Bionisches Fleisch hergestellt.
+
+H-Milch und Bionisches Fleisch können an unterschiedlichen verkaufstellen Verkauft werden.
+Stammzellen können nur weiterverarbeitet werden.
+
+Placeable Shop Kategorie: Produktionen -> Fabriken
+Baukosten: 110.000 €
+Eingehende Güter: Milch, Nährstofflösung, Stammzellen(eigene Produktionslinie)
+Ausgehende Güter: H-Milch, Bionisches Fleisch
+
+Funktionen:
+- Schaltbares Licht
+- Digitale Displays
+
+
+Produktionsrezepte
+
+Stammzellen:
+100 l Milch ergibt 20 l Stammzellen (48 Zyklen / Monat | 240 € / Monat)
+
+H-Milch:
+100 l Milch Ergeben 95 l H-Milch (48 Zyklen / Monat | 240 € / Monat)
+
+Bionisches Fleisch:
+20 l Stammzellen + 20 l Nahrstofflösung ergeben 100 l Bionisches Fleisch (48 Zyklen / Monat | 240 € / Monat)
+]]></de>
+</description>
+    
+    <multiplayer supported="true"/>
+    
+    <iconFilename>icon_BionicMeatStation.dds</iconFilename>
+    
+    <storeItems>
+        <storeItem xmlFilename="BionicMealProcessor.xml"/>
+        <storeItem xmlFilename="Paletten/NutrientSolution.xml"/>
+        <storeItem xmlFilename="Paletten/UTHMilk.xml"/>
+        <storeItem xmlFilename="Paletten/StemcellsTank.xml"/>
+        <storeItem xmlFilename="Paletten/BionicMeat.xml"/>
+    </storeItems>
+    
+    <extraSourceFiles>
+		<sourceFile filename="scripts/revamp_check.lua" />                 
+    </extraSourceFiles>
+
+ 	<dependencies>
+		<dependency>FS22_A_ProductionRevamp</dependency>
+	</dependencies>
+
+	<revamp minVersion="1.4.1.4">
+      <sellFillType base="EGG" fillType="BIONICMEAT"   forceRegister="true" />
+      <sellFillType base="EGG" fillType="UHTMILK"   forceRegister="true" />                                       
+	</revamp>
+
+ 	<fillTypes filename="newFillTypes/newfilltypes.xml" />   
+    <l10n>
+        <text name="Bionic Meat Processor">
+            <de>Bionischer Fleischverarbeiter</de>
+            <en>Bionic Meat Processor</en>
+        </text>
+        <text name="function_Bionic Meat Processor">
+            <de>Produktion zur Verarbeitung von Stammzellen zu Fleisch</de>
+            <en>Production for processing stem cells into meat</en>
+        </text>      
+        <text name="fillType_Milk">
+            <de>Milch</de>
+            <en>Milk</en>
+        </text>      
+        <text name="fillType_STEMCELLS">
+            <de>Stammzellen</de>
+            <en>Stemcells</en>
+        </text>      
+        <text name="fillType_BIONICMEAT">
+            <de>Bionisches Fleisch</de>
+            <en>Bionic Meat</en>
+        </text>      
+        <text name="fillType_NutrientSolution">
+            <de>Nährstofflösung</de>
+            <en>Nutrient Solution</en>
+        </text>                        
+        <text name="function_NutrientSolution">
+            <de>Nährstofflösung</de>
+            <en>Nutrient Solution</en>
+        </text>                        
+        <text name="fillType_STEMCELLS+NUTRIENT">
+            <de>Zellen+Nährstoff</de>
+            <en>StemCells+Nutrient</en>
+        </text>      
+        <text name="fillType_UHTMILK">
+            <de>Haltbare Milch</de>
+            <en>UHT Milk</en>
+        </text>      
+        <text name="LightOn">
+            <de>Licht An</de>
+            <en>Light On</en>
+        </text>      
+        <text name="LightOff">
+            <de>Licht Aus</de>
+            <en>Light Off</en>
+        </text>      
+        <text name="OpenGate">
+            <de>Tor Öffnen</de>
+            <en>Door Open</en>
+        </text>      
+        <text name="CloseGate">
+            <de>Tor Schliessen</de>
+            <en>Door Closed</en>
+        </text>      
+    </l10n>
+</modDesc>

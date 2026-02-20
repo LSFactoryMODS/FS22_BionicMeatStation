@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../shared/xml/schema/fillTypes.xsd">
+<!-- ############################ 	-->
+<!-- 	Bionic Meat Processor		-->
+<!-- ############################ 	-->
+	<fillTypes>
+		<fillType name="NUTRIENTSOLUTION" title="$l10n_fillType_NutrientSolution" showOnPriceTable="true">
+			<physics massPerLiter="0.0146" maxPhysicalSurfaceAngle="38" />
+			<image hud     ="Paletten/hud_fill_NutrientSolution.png" />
+			<image hudsmal   ="Paletten/hud_fill_NutrientSolution_smal.png" />			
+			<pallet filename="Paletten/NutrientSolution.xml" />
+			<economy pricePerLiter="0.65">
+				<factors>
+					<factor period="1"  value="1.00" />
+					<factor period="2"  value="1.00" />
+					<factor period="3"  value="1.00" />
+					<factor period="4"  value="1.00" />
+					<factor period="5"  value="1.00" />
+					<factor period="6"  value="1.00" />
+					<factor period="7"  value="1.00" />
+					<factor period="8"  value="1.00" />
+					<factor period="9"  value="1.00" />
+					<factor period="10" value="1.00" />
+					<factor period="11" value="1.00" />
+					<factor period="12" value="1.00" />
+				</factors>
+			</economy>	
+		</fillType>	
+		<fillType name="STEMCELLS" title="$l10n_fillType_STEMCELLS" showOnPriceTable="true">
+			<physics massPerLiter="0.0146" maxPhysicalSurfaceAngle="38" />
+			<image hud     ="Paletten/hud_fill_StemCell.png" />
+			<image hudsmal   ="Paletten/hud_fill_StemCell_smal.png" />
+			<pallet filename="Paletten/StemcellsTank.xml" />  						
+			<economy pricePerLiter="1.65">
+				<factors>
+					<factor period="1"  value="1.00" />
+					<factor period="2"  value="1.00" />
+					<factor period="3"  value="1.00" />
+					<factor period="4"  value="1.00" />
+					<factor period="5"  value="1.00" />
+					<factor period="6"  value="1.00" />
+					<factor period="7"  value="1.00" />
+					<factor period="8"  value="1.00" />
+					<factor period="9"  value="1.00" />
+					<factor period="10" value="1.00" />
+					<factor period="11" value="1.00" />
+					<factor period="12" value="1.00" />
+				</factors>
+			</economy>	
+		</fillType>	
+		<fillType name="BIONICMEAT" title="$l10n_fillType_BIONICMEAT" showOnPriceTable="true">
+			<physics massPerLiter="0.0146" maxPhysicalSurfaceAngle="38" />
+			<image hud     ="Paletten/hud_fill_BionicMeat.png" />
+			<image hudsmal   ="Paletten/hud_fill_BionicMeat_smal.png" />	
+			<pallet filename="Paletten/BionicMeat.xml" />            		
+			<economy pricePerLiter="1.25">
+				<factors>
+					<factor period="1"  value="1.00" />
+					<factor period="2"  value="1.00" />
+					<factor period="3"  value="1.00" />
+					<factor period="4"  value="1.00" />
+					<factor period="5"  value="1.00" />
+					<factor period="6"  value="1.00" />
+					<factor period="7"  value="1.00" />
+					<factor period="8"  value="1.00" />
+					<factor period="9"  value="1.00" />
+					<factor period="10" value="1.00" />
+					<factor period="11" value="1.00" />
+					<factor period="12" value="1.00" />
+				</factors>
+			</economy>	
+		</fillType>	
+		<fillType name="UHTMILK" title="$l10n_fillType_UHTMILK" showOnPriceTable="true">
+			<physics massPerLiter="0.0146" maxPhysicalSurfaceAngle="38" />
+			<image hud     ="Paletten/hud_fill_UTHMilk.png" />
+			<image hudsmal   ="Paletten/hud_fill_UTHMilk_smal.png" />	
+			<pallet filename="Paletten/UTHMilk.xml" />            		
+			<economy pricePerLiter="1.25">
+				<factors>
+					<factor period="1"  value="1.00" />
+					<factor period="2"  value="1.00" />
+					<factor period="3"  value="1.00" />
+					<factor period="4"  value="1.00" />
+					<factor period="5"  value="1.00" />
+					<factor period="6"  value="1.00" />
+					<factor period="7"  value="1.00" />
+					<factor period="8"  value="1.00" />
+					<factor period="9"  value="1.00" />
+					<factor period="10" value="1.00" />
+					<factor period="11" value="1.00" />
+					<factor period="12" value="1.00" />
+				</factors>
+			</economy>	
+		</fillType>	
+	</fillTypes>
+			
+    <fillTypeCategories>
+		<fillTypeCategory name="DBPRODUCTS">NUTRIENTSOLUTION STEMCELLS</fillTypeCategory>
+		<fillTypeCategory name="PRODUCT">NUTRIENTSOLUTION STEMCELLS</fillTypeCategory>	
+    </fillTypeCategories>
+	
+	
+
+</map>

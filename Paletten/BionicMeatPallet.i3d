@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="BionicMeatPallet.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="$data/objects/pallets/euroPallet01_diffuse.dds"/>
+    <File fileId="3" filename="Meat_diffuse.dds"/>
+    <File fileId="6" filename="plastik.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="Default OBJ" materialId="5" specularColor="0.494118 1 0">
+      <Texture fileId="3"/>
+    </Material>
+    <Material name="euroPallet01_mat" materialId="6">
+      <Texture fileId="2"/>
+    </Material>
+    <Material name="lambert1" materialId="7" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="Material.003" materialId="8" specularColor="0.494118 1 0" alphaBlending="true">
+      <Texture fileId="6"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="9" diffuseColor="1 1 1 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="BionicMeatPallet.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <Shape shapeId="1" name="BionicMeat_main_component1" dynamic="true" compound="true" collisionMask="2109442" clipDistance="300" nodeId="18" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true">
+        <Shape shapeId="2" name="pallet_vis" translation="0.00045369 0 0" clipDistance="300" nodeId="19" materialIds="6" castsShadows="true" receiveShadows="true">
+          <TransformGroup name="collisions" nodeId="20">
+            <Shape shapeId="3" name="floorCollision01" translation="0.304771 0 0" compoundChild="true" collisionMask="16781578" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="21" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <Shape shapeId="3" name="floorCollision02" translation="-0.305692 0 0" compoundChild="true" collisionMask="16781578" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="22" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </TransformGroup>
+          <TransformGroup name="content" nodeId="23">
+            <Shape shapeId="4" name="box1" translation="0.00939404 -0.328982 0.00564669" rotation="90 -0 0" nodeId="24" materialIds="5" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="5" name="boxTension" translation="-0.316155 -0.218911 -0.638873" rotation="-90 -0 0" scale="0.5998 0.32548 0.357806" nodeId="25" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="4" name="box2" translation="0.00628055 -0.00572101 0.00663315" rotation="90 -0 0" nodeId="26" materialIds="5" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="5" name="boxTension" translation="-0.316155 -0.218911 -0.638873" rotation="-90 -0 0" scale="0.5998 0.32548 0.357806" nodeId="27" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="4" name="box3" translation="0.00739157 -0.328982 0.396137" rotation="90 -0 0" nodeId="28" materialIds="5" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="5" name="boxTension" translation="-0.316155 -0.190219 -0.638873" rotation="-90 -0 0" scale="0.5998 0.32548 0.357806" nodeId="29" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="4" name="box4" translation="0.609148 -0.328982 0.394495" rotation="90 -0 0" nodeId="30" materialIds="5" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="5" name="boxTension" translation="-0.316155 -0.218911 -0.638873" rotation="-90 -0 0" scale="0.5998 0.32548 0.357806" nodeId="31" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="4" name="box5" translation="0.609148 -0.328982 0.00627252" rotation="90 -0 0" nodeId="32" materialIds="5" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="5" name="boxTension" translation="-0.316155 -0.218911 -0.638873" rotation="-90 -0 0" scale="0.5998 0.32548 0.357806" nodeId="33" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="4" name="box6" translation="0.609323 -0.00572101 0.00460599" rotation="90 -0 0" nodeId="34" materialIds="5" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="5" name="boxTension" translation="-0.316155 -0.218911 -0.638873" rotation="-90 -0 0" scale="0.5998 0.32548 0.357806" nodeId="35" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="4" name="box7" translation="0.609323 -0.00572103 0.394371" rotation="90 -0 0" nodeId="36" materialIds="5" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="5" name="boxTension" translation="-0.316155 -0.190898 -0.638873" rotation="-90 -0 0" scale="0.5998 0.32548 0.357806" nodeId="37" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="4" name="box8" translation="0.00583265 -0.00572103 0.393081" rotation="90 -0 0" nodeId="38" materialIds="5" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="5" name="boxTension" translation="-0.316155 -0.19069 -0.638873" rotation="-90 -0 0" scale="0.5998 0.32548 0.357806" nodeId="39" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              <Shape shapeId="6" name="folie" translation="0.677962 -0.868669 -0.194463" rotation="-90 1.43384e-19 1.64012e-12" scale="0.986658 0.868312 1" nodeId="40" materialIds="8" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="dischargeNode" translation="-0.00045369 0.78376 0" nodeId="41"/>
+          <Shape shapeId="7" name="dynamicMountTrigger" translation="-0.00045369 0.09 0" visibility="false" kinematic="true" trigger="true" collisionMask="134217728" nodeId="42" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </Shape>
+      </Shape>
+  </Scene>
+
+</i3D>

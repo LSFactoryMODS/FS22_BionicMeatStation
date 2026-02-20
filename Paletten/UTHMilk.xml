@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="pallet"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>$l10n_fillType_UHTMILK</name>
+         <image>$data/store/store_empty.png</image>       
+        <category>pallets</category> 
+        <showInStore>false</showInStore>              
+        <brand>LIZARD</brand>
+        <canBeSold>false</canBeSold>
+		<allowLeasing>false</allowLeasing>
+        <financeCategory>OTHER</financeCategory>
+        <vertexBufferMemoryUsage>50688</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>6912</indexBufferMemoryUsage>
+        <textureMemoryUsage>1048576</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_pallet</typeDesc>
+        <filename>Paletten/UTHMilk.i3d</filename>
+        <size width="1.4" length="1" height="1.5" />
+        <canBeReset>false</canBeReset>
+        <components>
+            <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="450"/>
+        </components>
+        <showInVehicleMenu>false</showInVehicleMenu>
+        <mapHotspot available="false" />
+    </base>
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits removeVehicleIfEmpty="true">
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="UHTMILK" capacity="1000"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <dischargeable requiresTipOcclusionArea="false">
+        <dischargeNode node="dischargeNode" emptySpeed="500" fillUnitIndex="1" maxDistance="6" canStartDischargeAutomatically="true" playSound="false"/>
+    </dischargeable>
+
+    <pallet fillUnitIndex="1" node="pallet_vis">
+        <content>
+            <object node="UTHMilk1" tensionBeltNode="UTHMilk1Tension"/>
+            <object node="UTHMilk2" tensionBeltNode="UTHMilk2Tension"/>
+            <object node="UTHMilk3" tensionBeltNode="UTHMilk3Tension"/>
+            <object node="UTHMilk4" tensionBeltNode="UTHMilk4Tension"/>
+            <object node="UTHMilk5" tensionBeltNode="UTHMilk5Tension"/>
+            <object node="UTHMilk6" tensionBeltNode="UTHMilk6Tension"/>
+            <object node="UTHMilk7" tensionBeltNode="UTHMilk7Tension"/>
+            <object node="UTHMilk8" tensionBeltNode="UTHMilk8Tension"/>		           	
+        </content>
+
+        <sounds>
+            <unload template="palletsFillPlastic" pitchScale="0.8" />
+        </sounds>
+    </pallet>
+
+    <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="5" additionalMountDistance="0.85" jointTransY="0.11" jointLimitToRotY="true"/>
+
+<i3dMappings>
+  <i3dMapping id="UTHMilk_main_component1" node="0>" />
+  <i3dMapping id="pallet_vis" node="0>0" />
+  <i3dMapping id="collisions" node="0>0|0" />
+  <i3dMapping id="floorCollision01" node="0>0|0|0" />
+  <i3dMapping id="floorCollision02" node="0>0|0|1" />
+  <i3dMapping id="content" node="0>0|1" />
+  <i3dMapping id="UTHMilk1" node="0>0|1|0" />
+  <i3dMapping id="UTHMilk1Tension" node="0>0|1|0|0" />
+  <i3dMapping id="UTHMilk2" node="0>0|1|1" />
+  <i3dMapping id="UTHMilk2Tension" node="0>0|1|1|0" />
+  <i3dMapping id="UTHMilk3" node="0>0|1|2" />
+  <i3dMapping id="UTHMilk3Tension" node="0>0|1|2|0" />
+  <i3dMapping id="UTHMilk4" node="0>0|1|3" />
+  <i3dMapping id="UTHMilk4Tension" node="0>0|1|3|0" />
+  <i3dMapping id="UTHMilk5" node="0>0|1|4" />
+  <i3dMapping id="UTHMilk5Tension" node="0>0|1|4|0" />
+  <i3dMapping id="UTHMilk6" node="0>0|1|5" />
+  <i3dMapping id="UTHMilk6Tension" node="0>0|1|5|0" />
+  <i3dMapping id="UTHMilk7" node="0>0|1|6" />
+  <i3dMapping id="UTHMilk7Tension" node="0>0|1|6|0" />
+  <i3dMapping id="UTHMilk8" node="0>0|1|7" />
+  <i3dMapping id="UTHMilk8Tension" node="0>0|1|7|0" />
+  <i3dMapping id="dischargeNode" node="0>0|2" />
+  <i3dMapping id="dynamicMountTrigger" node="0>0|3" />
+</i3dMappings>
+</vehicle>
